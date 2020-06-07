@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- 比例缩放设置 -->
+    <!-- width=device-width: 视口宽度等于设备宽度 -->
+    <!-- initial-scale=1：初始比例 -->
+    <!-- user-scalable=no： 禁止用户缩放（双手指进行放大缩小） -->
+    <!-- maximum-scale=1：最大缩放 -->
+    <!-- minimum-scale=1: 最小缩放 -->
+    <!-- user-scalable=no： iphone真机无效，在安卓手机有效 -->
+    <!-- shrink-to-fit=no：禁止在iphone真机缩放，iphone6 plus 测试无效 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+    <title>meitu</title>
+</head>
+
+<body>
+
+    <div class="golbal-wrapper">
+
+        <!-- 头部盒子 -->
+        <div class="golbal-header">
+            <!-- 头部内容盒子 -->
+            <div class="golbal-header-contant">
+                <!-- 头部导航 -->
+                <div class="golbal-header-nav">
+                    <div class="golbal-header-nav-list">
+                        <div class="golbal-header-nav-item">
+                            <a href="#">
+                                <div class="golbal-header-nav-logo">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="golbal-header-nav-item">手机</div>
+                        <div class="golbal-header-nav-item">美容仪器</div>
+                        <div class="golbal-header-nav-item">配件</div>
+                        <div class="golbal-header-nav-item">服务支持</div>
+                        <div class="golbal-header-nav-item">企业网站</div>
+                        <div class="golbal-header-nav-item golbal-header-nav-item-search"></div>
+
+
+                        <div class="golbal-header-nav-item golbal-header-nav-item-user" id="dropdownMenuButton"
+                            data-toggle="dropdown">
+                        </div>
+
+                        <!-- 下拉菜单 -->
+                        <div class="dropdown-menu dropdown-menu-left">
+                            <div class="arrow"></div>
+                            <div class="dropdown-item shopper">
+                                <p>
+                                    你的购物袋是空的
+                                </p>
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon shopper-icon"></div>
+                                购物袋
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon yuyue-icon"></div>
+                                我的预约
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon dingdan-icon"></div>
+                                我的订单
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon change-icon"></div>
+                                以旧换新订单
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon youhuiquan-icon"></div>
+                                优惠券
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon tongdao-icon"></div>
+                                S码通道
+                            </div>
+                            <div class="dropdown-item shop-list">
+                                <div class="dropdown-menu-icon denglu-icon"></div>
+                                登录
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 搜素弹出框 -->
+            <div class="search-popover">
+                <div class="popover-input">
+                    <input type="text" class="ipt" placeholder="搜索 Meitu.com">
+                    <div class="golbal-header-nav-item search-popover-search"></div>
+                    <div class="close">X</div>
+                </div>
+                <div class="global-header-searchview-form">
+                    <a href="#">快速连接</a>
+                    <a href="#">配件</a>
+                    <a href="#">售后维修网点</a>
+                </div>
+            </div>
+
+            <div class="sm-golbal-header-contant">
+                <nav class="sm-global-header-nav">
+                    <div class="sm-global-contant">
+                        <div class="menu sm-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="sm-logo sm-item"></div>
+                        <div class="sm-user sm-item"></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="sm-contant" data-show="0">
+                <ul>
+                    <li>手机</li>
+                    <li>美容仪器</li>
+                    <li>配件</li>
+                    <li>服务支持</li>
+                    <li>企业网站</li>
+                    <li>
+                        <input type="text" class="ipt" placeholder="搜索 Meitu.com">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- 内容区 -->
+        <div class="golbal-contant">
+
+            <!-- 轮播图盒子 -->
+            <div class="golbal-contant-carousel">
+
+                <!-- 轮播图 -->
+                <div id="carouselExampleIndicators" class="carousel slide golbal-contant-carousel-pic-boc"
+                    data-ride="carousel">
+
+                    <!-- 轮播图列表 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    </ol>
+
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item-pic">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-pic">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 上一张与下一张按钮 -->
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+
+                <!-- 小图片区 -->
+                <div class="golbal-contant-carousel-etui">
+                    <div class="golbal-contant-carousel-etui-img">
+                        <img class="d-block w-100 " src="./images/mt.png" alt="">
+                        <div class="golbal-contant-carousel-etui-text">
+                            美图旗舰店4+64G仅售1099元︱立即前往
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 瓷片区 -->
+            <div class="golbal-contant-floor">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 golbal-contant-floor-img-box px-0">
+                            <img class="d-block w-100" src="./images/floor-img1.jpg" alt="">
+                        </div>
+                        <div class="col-xl-3 col-sm-6 golbal-contant-floor-img-box px-0">
+                            <img class="d-block w-100" src="./images/floor-img2.jpg" alt="">
+                        </div>
+                        <div class="col-xl-3 col-sm-6 golbal-contant-floor-img-box px-0">
+                            <img class="d-block w-100" src="./images/floor-img3.jpg" alt="">
+                        </div>
+                        <div class="col-xl-3 col-sm-6 golbal-contant-floor-img-box px-0">
+                            <img class="d-block w-100" src="./images/floor-img4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 底部 -->
+        <div class="golbal-footer">
+
+            <!-- 信息区 -->
+            <div class="golbal-footer-info">
+                <div>
+                    <h3>选择及了解</h3>
+                    <ul>
+                        <li>
+                            <a href="#">美图T7</a>
+                        </li>
+                        <li>
+                            <a href="#">美图T9</a>
+                        </li>
+                        <li>
+                            <a href="#">美图V6</a>
+                        </li>
+                        <li>
+                            <a href="#">美图M8s</a>
+                        </li>
+                        <li>
+                            <a href="#">配件</a>
+                        </li>
+                        <li>
+                            <a href="#">更多美图手机</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>购物帮助</h3>
+                    <ul>
+                        <li>
+                            <a href="#">发送及配货</a>
+                        </li>
+                        <li>
+                            <a href="#">订单相关</a>
+                        </li>
+                        <li>
+                            <a href="#">支付方式</a>
+                        </li>
+                        <li>
+                            <a href="#">账号相关</a>
+                        </li>
+                        <li>
+                            <a href="#">相关政策</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>服务支持</h3>
+                    <ul>
+                        <li>
+                            <a href="#">预置应用公示</a>
+                        </li>
+                        <li>
+                            <a href="#">售后流程</a>
+                        </li>
+                        <li>
+                            <a href="#">售后服务政策</a>
+                        </li>
+                        <li>
+                            <a href="#">服务网点</a>
+                        </li>
+                        <li>
+                            <a href="#">寻找美图手机</a>
+                        </li>
+                        <li>
+                            <a href="#">问题反馈</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>美图APP</h3>
+                    <ul>
+                        <li>
+                            <a href="#">美图秀秀</a>
+                        </li>
+                        <li>
+                            <a href="#">美颜相机</a>
+                        </li>
+                        <li>
+                            <a href="#">美拍</a>
+                        </li>
+                        <li>
+                            <a href="#">美图皮肤</a>
+                        </li>
+                        <li>
+                            <a href="#">美图魔镜</a>
+                        </li>
+                        <li>
+                            <a href="#">了解更多产品</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>关于美图</h3>
+                    <ul>
+                        <li>
+                            <a href="#">了解美图</a>
+                        </li>
+                        <li>
+                            <a href="#">美图资讯</a>
+                        </li>
+                        <li>
+                            <a href="#">投资者关系</a>
+                        </li>
+                        <li>
+                            <a href="#">文化和价值观</a>
+                        </li>
+                        <li>
+                            <a href="#">工作机会</a>
+                        </li>
+                        <li>
+                            <a href="#">联系美图</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="title">客服工作时间周一至周日 9:00 - 18:00</div>
+                    <div class="number">400-990-9696</div>
+                    <a href="#">
+                        在线客服
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 手机端折叠菜单 -->
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseOne">
+                                选择及了解
+                            </button>
+                        </h2>
+                    </div>
+            
+                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <a href="#">美图T7</a>
+                                </li>
+                                <li>
+                                    <a href="#">美图T9</a>
+                                </li>
+                                <li>
+                                    <a href="#">美图V6</a>
+                                </li>
+                                <li>
+                                    <a href="#">美图M8s</a>
+                                </li>
+                                <li>
+                                    <a href="#">配件</a>
+                                </li>
+                                <li>
+                                    <a href="#">更多美图手机</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo">
+                                购物帮助
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <a href="#">发送及配货</a>
+                                </li>
+                                <li>
+                                    <a href="#">订单相关</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">账号相关</a>
+                                </li>
+                                <li>
+                                    <a href="#">相关政策</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree">
+                                服务支持
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <a href="#">预置应用公示</a>
+                                </li>
+                                <li>
+                                    <a href="#">售后流程</a>
+                                </li>
+                                <li>
+                                    <a href="#">售后服务政策</a>
+                                </li>
+                                <li>
+                                    <a href="#">服务网点</a>
+                                </li>
+                                <li>
+                                    <a href="#">寻找美图手机</a>
+                                </li>
+                                <li>
+                                    <a href="#">问题反馈</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour">
+                                美图APP
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <a href="#">美图秀秀</a>
+                                </li>
+                                <li>
+                                    <a href="#">美颜相机</a>
+                                </li>
+                                <li>
+                                    <a href="#">美拍</a>
+                                </li>
+                                <li>
+                                    <a href="#">美图皮肤</a>
+                                </li>
+                                <li>
+                                    <a href="#">美图魔镜</a>
+                                </li>
+                                <li>
+                                    <a href="#">了解更多产品</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFive">
+                                关于美图
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    <a href="#">了解美图</a>
+                                </li>
+                                <li>
+                                    <a href="#">美图资讯</a>
+                                </li>
+                                <li>
+                                    <a href="#">投资者关系</a>
+                                </li>
+                                <li>
+                                    <a href="#">文化和价值观</a>
+                                </li>
+                                <li>
+                                    <a href="#">工作机会</a>
+                                </li>
+                                <li>
+                                    <a href="#">联系美图</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cr-box">
+                    <div class="title">客服工作时间周一至周日 9:00 - 18:00</div>
+                    <div class="number">400-990-9696</div>
+                    <a href="#">
+                        在线客服
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 政策区 -->
+            <div class="golbal-footer-justify">
+
+                <div class="copyright">
+                    <div class="copyright-legal">
+                        <span class="legal-copyright" title="Copyright © 2020 Meitu 美图公司保留所有权利">
+                            © 2020
+                        </span>
+                        <a href="#" class="legal-item">隐私政策</a>
+                        <a href="#" class="legal-item">使用条款</a>
+                        <a href="#" class="legal-item">销售政策</a>
+                        <a href="#" class="legal-item">法律声明</a>
+                        <a href="#" class="legal-item">广告投放</a>
+                        <a href="#" class="legal-item">廉政建设</a>
+                    </div>
+                </div>
+                <div class="police">
+                    <a href="#" class="global-police-license">闽公网安备 35020302000186号,</a>
+                    <span class="global-police-license">闽ICP证B2-20040192，</span>
+                    <a href="#" class="global-police-license">闽网文(2018)8421-380号 ，</a>
+                    <span class="global-police-license">违法和不良信息举报电话：400-990-9696</span>
+                    <a href="#" class="global-police-license global-police-business"></a>
+                    <a href="#" class="global-police-license global-police-culture"></a>
+                    <p class="global-police-license poloce-sever">厦门美图网科技有限公司 客服电话：0592-5919017</p>
+                    <a href="#" class="global-police-license poloce-sever">互联网药品信息服务资格证书（闽）-非经营性-2018-0058</a>
+                </div>
+
+                <div class="policeSm">
+                    <a href="#" class="global-police-license">闽公网安备 35020302000186号,</a>
+                    <span class="global-police-license">闽ICP证B2-20040192，</span><br/>
+                    <a href="#" class="global-police-license">闽网文(2018)8421-380号 ，</a><br/>
+                    <span class="global-police-license">违法和不良信息举报电话：400-990-9696</span>
+                    <a href="#" class="global-police-license global-police-business"></a>
+                    <a href="#" class="global-police-license global-police-culture"></a>
+                    <p class="global-police-license poloce-sever">厦门美图网科技有限公司 客服电话：0592-5919017</p>
+                    <a href="#" class="global-police-license poloce-sever">互联网药品信息服务资格证书（闽）-非经营性-2018-0058</a>
+                </div>
+
+                <a class="global-language" rel="nofollow">
+                    <span class="icon global-country"></span>
+                    中国
+                </a>
+            </div>
+
+        </div>
+
+        <!-- 遮罩层 -->
+        <div id="golbal-mask"></div>
+
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+@media screen and (min-width: 992px) {
+
+  .accordion {
+    display: none;
+  }
+
+  .policeSm {
+    display: none;
+  }
+
+  .arrow {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 136px;
+    top: -6px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .accordion {
+    display: none;
+  }
+
+  .policeSm {
+    display: none;
+  }
+
+  .sm-contant {
+    display: none;
+  }
+
+  .arrow {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 272px;
+    top: -6px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .carousel-item-pic {
+    background-image: url(../images/top-bg1.jpg) !important;
+  }
+
+  .golbal-contant-carousel-etui {
+    top: 15%;
+    left: 50%;
+  }
+
+  .legal-copyright {
+    width: 100%;
+    display: block;
+    padding: 0 10PX;
+  }
+
+  .copyright-legal>a {
+    width: 66px;
+  }
+
+  .policeSm {
+    display: block;
+    padding: 0 10px;
+  }
+
+  .police {
+    display: none;
+  }
+
+  .poloce-sever {
+    margin: 0 !important;
+  }
+
+  .golbal-footer-info {
+    display: none;
+  }
+
+  .golbal-header-contant {
+    display: none !important;
+  }
+
+  .search-popover {
+    width: 765px !important;
+    left: 0;
+    top: 44px;
+    height: 1000px;
+  }
+
+
+
+}

@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #555555;
+}
+
+a:hover {
+  color: #e82878;
+}
+
+
+/* 头部 */
+.golbal-header {
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  padding: 0 20px;
+  position: relative;
+}
+
+.golbal-header-contant {
+  height: 44px;
+}
+
+.golbal-header-nav-list {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 44px;
+  text-align: justify;
+  display: flex;
+}
+
+.golbal-header-nav-item {
+  margin-left: auto;
+  line-height: 44px;
+  vertical-align: top;
+  color: white;
+  cursor: pointer;
+}
+
+.golbal-header-nav-item:hover {
+  color: #aaaaaa;
+}
+
+.golbal-header-nav-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.golbal-header-nav-logo {
+  width: 122px;
+  height: 30px;
+  background: url(../images/bg-icon.png);
+  background-size: 400px 400px;
+  margin-top: 7px;
+}
+
+.golbal-header-nav-item-search {
+  width: 16px;
+  background: url(../images/bg-icon.png);
+  background-position: -210px 8px;
+  background-size: 400px 400px;
+}
+
+.golbal-header-nav-item-user {
+  width: 20px;
+  background: url(../images/bg-icon.png);
+  background-position: -166px 8px;
+  background-size: 400px 400px;
+}
+
+
+/* 内容区 */
+.golbal-contant-carousel {
+  width: 100%;
+  height: 670px;
+  position: relative;
+  z-index: 2;
+}
+
+.golbal-contant-carousel-pic-boc {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+
+}
+
+.carousel-item-pic {
+  background-image: url(../images/top-bg.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.golbal-contant-carousel-etui {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.golbal-contant-carousel-etui-text {
+  margin-top: 20px;
+  color: #e91e63;
+  font-size: 20px;
+}
+
+.golbal-contant-floor-img-box {
+  padding-top: 5px;
+  padding-left: 5px !important;
+  padding-bottom: 5px;
+}
+.golbal-contant-floor-img-box:nth-child(1) {
+  padding-left: 0 !important;
+}
+
+
+/* 底部 */
+.golbal-footer {
+  width: 100%;
+  background: #f4f4f4;
+  padding: 40px 0 0;
+}
+
+.golbal-footer-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+}
+
+.golbal-footer-info>div {
+  width: 200px;
+}
+
+.golbal-footer-info>div>h3 {
+  font-size: 12px;
+}
+
+.golbal-footer-info>div a {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.number {
+  width: 200px;
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.golbal-footer-justify {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.legal-copyright::after {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 47px;
+  background-image: url(https://img.app.meitudata.com//meitumall/v2/images/dff63979.sprites-index@2x.png);
+  background-repeat: no-repeat;
+  background-position: -42px -240px;
+  background-size: 400px auto;
+}
+
+.legal-item {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.global-police-license {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.global-police-business,
+.global-police-culture {
+  height: 22px;
+  margin-left: 10px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: 400px auto;
+}
+
+.global-police-business {
+  width: 46px;
+  background-image: url(../images/bg-icon.png);
+  background-position: -308px -188px;
+}
+
+.global-police-culture {
+  width: 22px;
+  background-image: url(../images/bg-icon.png);
+  background-position: -378px -188px;
+}
+
+.poloce-sever {
+  display: block;
+}
+
+.police>p {
+  margin: 0;
+  color: #999;
+}
+
+.police {
+  color: #999;
+}
+
+.global-language {
+  color: #999;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding-left: 24px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.icon {
+  background-image: url(../images/bg-icon.png) !important;
+  background-size: 400px 400px !important;
+  background-repeat: no-repeat !important;
+}
+
+.global-country {
+  height: 18px;
+  width: 16px;
+  position: absolute;
+  display: block;
+  left: 0;
+  background-position: -300px -5px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 0 !important;
+}
+
+.navbar-search-img1 {
+  float: left;
+  background-position: -210px 0;
+  margin-right: 20px;
+}
+
+/* 弹出框 */
+.search-popover {
+  width: 600px;
+  background-color: #000000;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  display: none;
+}
+
+.search-popover-search {
+  width: 16px;
+  height: 44px;
+  background: url(../images/bg-icon.png);
+  background-position: -210px 8px;
+  background-size: 400px 400px;
+  float: left;
+  padding-right: 30px;
+}
+
+.ipt {
+  width: 80%;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.global-header-searchview-form>a{
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px;
+  color: white;
+}
+
+.global-header-searchview-form>a:nth-child(1) {
+  color: #8b8b8b;
+}
+
+.global-header-searchview-form>a:hover {
+  text-decoration: none;
+}
+
+.close {
+  float: right;
+  padding: 15px;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+
+
+.golbal-wrapper .golbal-mask-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  z-index: 2;
+  background: rgba(0, 0, 0, .5);
+  transition: opacity 1s ease .1s;
+}
+
+/* 下拉菜单 */
+.dropdown-menu {
+  position: fixed;
+  top: 0px !important;
+  right: 0;
+  width: 305px;
+  height: 450px;
+  background-color: #ffffff;
+  z-index: 10;
+  padding: 10px 20px;
+}   
+
+.shop-list {
+  margin: 12px auto 12px;
+}
+
+.shopper>p {
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.dropdown-menu-icon {
+  width: 16px ;
+  height: 16px;
+  float: left;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.shopper-icon {
+  background: url(../images/shopper.png);
+}
+
+.yuyue-icon {
+  background: url(../images/yuyue.png);
+}
+
+.dingdan-icon {
+  background: url(../images/dingdan.png);
+}
+
+.change-icon {
+  background: url(../images/change-fill.png);
+}
+
+.youhuiquan-icon {
+  background: url(../images/youhuiquan_1.png);
+}
+
+.tongdao-icon {
+  background: url(../images/tongdao.png);
+}
+
+.denglu-icon {
+  background: url(../images/denglu.png);
+}
+
+
+/* 手机端折叠菜单 */
+
+.card {
+  font-size: 12px;
+}
+
+.card-header {
+  height: 30px;
+  padding: 0
+}
+
+.btn {
+  height: 30px;
+}
+
+.btn-link {
+  font-size: 12px !important;
+  text-align: justify;
+  vertical-align: top;
+  text-decoration: none;
+  color: #333333;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+.card-body {
+  background-color: #f7f7f7;
+}
+
+.cr-box {
+  padding-top: 20px;
+  padding-left: 12px;
+}
+
+.sm-golbal-header-contant {
+  width: 100%;
+  color: #999;
+}
+
+.sm-global-header-nav {
+  height: 44px;
+}
+
+.sm-global-contant {
+  margin: 0 auto;
+  max-width: 765px;
+  height: 44px;
+  text-align: justify;
+  display: flex;
+}
+
+.sm-item {
+  margin-left: auto;
+  line-height: 44px;
+  /* vertical-align: center; */
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.sm-item:nth-child(1) {
+  margin-left: 0;
+}
+
+
+.sm-global-header-nav .menu>span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #999;
+}
+
+.sm-logo {
+  width: 122px;
+  height: 30px;
+  background: url(../images/bg-icon.png);
+  background-size: 400px 400px;
+  /* margin-top: 7px; */
+  /* margin: 0 230px; */
+}
+
+.sm-user {
+  width: 20px;
+  background: url(../images/bg-icon.png);
+  background-position: -166px 0px;
+  background-size: 400px 400px;
+}
+
+.golbal-wrapper {
+  position: relative;
+}
+
+.sm-contant {
+  position: absolute;
+  z-index: 5;
+  top: 44px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 765px;
+  height: 600px;
+  overflow: hidden;
+  background-color: black;
+  display: none;
+}
+
+.sm-contant ul {
+  padding: 30px 30px 0;
+}
+
+.sm-contant li {
+  color: #fff;
+  padding-bottom: 10PX;
+  font-size: 14PX;
+}
